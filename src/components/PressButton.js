@@ -3,18 +3,19 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default class PressButton extends Component {
   state = {
-    texts: ['Hello World!!!']
+    texts: ['Hello World!!!'],
+    pushCount: 0,
   }
 
   render() {
     return (
       <View style={styles.container}>
         {this.state.texts.map((t, i) => (
-          <Text key={`${t}-${i}`}>{t}</Text>
+          <Text key={`${t}-${i}`}>{t.repeat(i)}</Text>
         ))}
         <Button
           onPress={() => {
-            this.setState({ texts: [...this.state.texts, '追加された'] })
+            this.setState({ texts: [...this.state.texts, 'オラ'] })
           }}
           title="押して..."
         />
