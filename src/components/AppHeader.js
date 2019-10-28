@@ -7,13 +7,11 @@ export default class AppHeader extends Component {
     const { headerBody } = this.props
 
     return (
-      <Container>
-        <Header>
-          <Body>
-            <Title>{headerBody}</Title>
-          </Body>
-        </Header>
-      </Container>
-    );
+      <Header>
+        <Body>
+          <Title>{headerBody}</Title>
+        </Body>
+      </Header>
+  );
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { StyleSheet } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack'
 import { createAppContainer } from "react-navigation";
 
@@ -33,9 +34,14 @@ export default class App extends Component {
     return (
       <Fragment>
         <AppContainer ref = {nav => {this.navigator = nav;}} />
-        <PressButton />
       </Fragment>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  pressButton: {
+    height: 120,
+  },
+});
 

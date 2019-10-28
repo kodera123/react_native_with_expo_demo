@@ -25,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
-  }
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
+  },
+  "displayName": "kody_native_expo",
+  "name": "kody_native_expo"
 }
